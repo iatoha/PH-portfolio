@@ -1,31 +1,63 @@
 .header-container {
     height: 100vh;
-    background-color: var(--background-color);
     background-image: url('../images/banner/banner.jpg');
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
 }
 
 .nav {
     display: flex;
-    color: var(--primary-font-color);
-    padding: 20px;
+    padding-top: 20px;
     gap: 20px;
     justify-content: space-between;
     font-size: 36px;
 }
-#menu-icon-id{
+
+#menu-icon-id {
     width: 175px;
-    text-align: right   ;
+    text-align: right;
 }
 
-.banner-section{
-    color: var(--primary-font-color);
-    text-align: center;
+.banner-title h1 {
     font-size: 90px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    margin: 20px 0px;
 }
 
-.paragraph{
-    color: var(--primary-font-color);
-    text-align:center;
+.banner-desc {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 20px 0px;
+}
+
+.banner-profile-container {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--primary-font-color);
+    border-bottom: 1px solid var(--primary-font-color);
+}
+
+.banner-profile-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 40px;
+}
+
+.banner-image-container {
+    background-color: var(--primary-font-color);
+    width: fit-content;
+    position: sticky;
+}
+
+#banner-image {
+    height: 300px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+    .nav {
+        font-size: 16px;
+    }
 }

@@ -7,10 +7,19 @@
     --primary-color: #BA8BF9;
 }
 
+body {
+    background-color: var(--background-color);
+}
+
 * {
     margin: 0;
     padding: 0;
 
     font-family: "Antonio", sans-serif;
     font-weight: 400;
+    color: var(--primary-font-color);
+}
+
+.container {
+    padding: 0px 60px;
 }
