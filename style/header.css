@@ -1,6 +1,6 @@
 .header-container {
     height: 100vh;
-    background-image: url('../images/banner/banner.jpg');
+    background-image: url('../images/navbar/Rectangle\ 5.png');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -46,14 +46,45 @@
     font-size: 40px;
 }
 
+.work-icon-container{
+    display: flex;
+    gap: 10px;
+    padding: 40px 0px;
+}
+
+.work-icon-container h1 {
+    border-bottom: 1px solid var(--primary-font-color);
+}
+
 .banner-image-container {
     background-color: var(--primary-font-color);
     width: fit-content;
     position: sticky;
 }
 
+.check-icon{
+    height: 60px;
+    width: 60px;
+}
+
 #banner-image {
     height: 300px;
+}
+
+.complete-projects-container{
+    display: flex;
+     justify-content: space-between;
+}
+
+.complete-projects-card h1{
+    font-size: 120px;
+    font-weight: 900;
+}
+
+.complete-projects-card p{
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 @media only screen and (min-width: 200px) and (max-width: 576px) {
