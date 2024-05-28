@@ -1,8 +1,8 @@
 .header-container {
-    height: 100vh;
+    height: 100%;
     background-image: url('../images/navbar/Rectangle\ 5.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
 }
 
 .nav {
@@ -14,7 +14,7 @@
 }
 
 #menu-icon-id {
-    width: 175px;
+    width: 50px;
     text-align: right;
 }
 
@@ -86,7 +86,10 @@
     text-transform: uppercase;
 }
 
+
+
 @media only screen and (min-width: 100px) and (max-width: 576px) {
+
     .nav {
         font-size: 16px;
     }
@@ -95,11 +98,20 @@
         flex-direction: column;
     }
 
-    .banner-title h1{
+    .banner-image-container {
+        width: 100%;
+    }
+
+    .banner-title h1 {
         font-size: 14px;
+    }
+
+    #banner-image {
+        width: 100%;
     }
 
     .banner-profile-container {
         flex-direction: column;
     }
+
 }

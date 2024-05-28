@@ -1,0 +1,31 @@
+@media only screen and (min-width: 100px) and (max-width: 576px) {
+
+    .container {
+        padding: 0px 5px;
+    }
+
+    .nav {
+        font-size: 16px;
+    }
+
+    .complete-projects-container {
+        flex-direction: column;
+    }
+
+    .banner-image-container {
+        width: 100%;
+    }
+
+    .banner-title h1 {
+        font-size: 14px;
+    }
+
+    #banner-image {
+        width: 100%;
+    }
+
+    .banner-profile-container {
+        flex-direction: column;
+    }
+
+}
