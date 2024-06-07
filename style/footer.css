@@ -1,0 +1,46 @@
+footer {
+    height: 100vh;
+    margin-top: 70px;
+    background-image: linear-gradient(to bottom right, #5E4AF1, #BA0BF9);
+}
+
+.footer-container{
+    display: flex;
+    padding: 50px;
+}
+
+.left-footer {
+    height: 100vh;
+    background-color: aqua;
+    width: 50%;
+}
+
+.right-footer {
+    height: 100vh;
+    /* background-color: #5E4A  F1; */
+    width: 50%;
+}
+
+.contact-desc{
+    margin-top: 50px;
+}
+
+#contact-title{
+    text-transform: uppercase;
+    font-size: 30px ;
+    font-weight: bolder;
+}
+
+#contact-email{
+    text-transform:uppercase;
+    font-size: 20px;
+}
+#contact-number{
+    text-transform:uppercase;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+
+@media only screen and (min-width:200px) and (max-width:576px) {}
