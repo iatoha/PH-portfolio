@@ -1,5 +1,4 @@
 footer {
-    height: 100vh;
     margin-top: 70px;
     background-image: linear-gradient(to bottom right, #5E4AF1, #BA0BF9);
 }
@@ -10,14 +9,10 @@ footer {
 }
 
 .left-footer {
-    height: 100vh;
-    background-color: aqua;
     width: 50%;
 }
 
 .right-footer {
-    height: 100vh;
-    /* background-color: #5E4A  F1; */
     width: 50%;
 }
 
@@ -25,6 +20,37 @@ footer {
     margin-top: 50px;
 }
 
+.input{
+    width: 70%;
+    padding: 7px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 35px;
+}
+
+::placeholder{
+    color: white;
+}
+
+#send-btn{
+    width: 70%;
+    padding: 10px;
+    background-color: transparent   ;
+    border: 1px solid white;
+    font-size: 20px;
+}
+
+.form {
+    margin-top: 40px;
+}
+
+#form-title{
+    text-transform: uppercase;
+    font-size: 30px ;
+    font-weight: bolder;
+}
 #contact-title{
     text-transform: uppercase;
     font-size: 30px ;
@@ -39,6 +65,12 @@ footer {
     text-transform:uppercase;
     font-size: 20px;
     margin-top: 20px;
+}
+
+.social-icon{
+    margin-top: 40px;
+    display: flex;
+    gap:20px    ;
 }
 
 
