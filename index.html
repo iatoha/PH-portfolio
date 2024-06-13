@@ -120,9 +120,112 @@
 
     <!-- Expertise section start -->
 
-    <section 
-    style="height: 100vh; background-color: aqua; margin: 50px; padding: 50px;"   class="my-expertise">
-        
+    <!-- <div class="section-title" >
+            <h1>// my expertise </h1>
+    </div> -->
+
+
+    <div class="section-title">
+        <h1>//MY EXPERTISE</h1>
+    </div>
+    <section style="padding: 50px; margin-top: 30px;
+    display: flex; justify-content: space-between;" class="my-expertise bg-gradient">
+
+
+        <div style="display: flex; justify-content: space-between;">
+            <div
+            style="background-color: #68686863; border: 1px solid #686868; width: fit-content; padding: 40px 0px; border-radius: 20px;">
+
+            <h1 style="padding:20px ;">UI/UX DESIGN</h1>
+
+            <div style="border: 1px solid #686868; 
+        height: 360px; 
+        width: 400px; 
+         position: relative;">
+
+                <div class="expertie card" style="position: relative; top: 35px;">
+
+                    <div style="width: 100%; position: absolute; z-index: 50; top: 40px;">
+                        <img style="width: 100%;" src="images/expertise/Rectangle 39.jpg" alt="">
+                    </div>
+
+                    <div
+                        style="background-color: #686868; position: absolute; height: 200px; width: 270px; left: 70px; z-index: 20; top: 10px; border-radius: 30px;">
+
+                    </div>
+
+                    <div
+                        style="background-color: #4D4A53; height: 200px; width: 310px; position: absolute ; z-index: 30; left: 50px; top: 25px; border-radius: 30px;">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div
+            style="background-color: #68686863; border: 1px solid #686868; width: fit-content; padding: 40px 0px; border-radius: 20px;">
+
+            <h1 style="padding:20px ;">WEB DESIGN</h1>
+
+            <div style="border: 1px solid #686868; 
+        height: 360px; 
+        width: 400px; 
+        position: relative;">
+
+                <div class="expertie card" style="position: relative; top: 35px;">
+
+                    <div style="width: 100%; position: absolute; z-index: 50; top: 40px;">
+                        <img style="width: 100%;" src="images/expertise/Rectangle 39 (1).jpg" alt="">
+                    </div>
+
+                    <div
+                        style="background-color: #686868; position: absolute; height: 200px; width: 270px; left: 70px; z-index: 20; top: 10px; border-radius: 30px;">
+
+                    </div>
+
+                    <div
+                        style="background-color: #4D4A53; height: 200px; width: 310px; position: absolute ; z-index: 30; left: 50px; top: 25px; border-radius: 30px;">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    
+        <div
+            style="background-color: #68686863; border: 1px solid #686868; width: fit-content; padding: 40px 0px; border-radius: 20px;">
+
+            <h1 style="padding:20px ;">WEB DEVELOPMENT</h1>
+
+            <div style="border: 1px solid #686868; 
+        height: 360px; 
+        width: 400px; 
+        position: relative;">
+
+                <div class="expertie card" style="position: relative; top: 35px;">
+
+                    <div style="width: 100%; position: absolute; z-index: 50; top: 40px;">
+                        <img style="width: 100%;" src="images/expertise/Rectangle 39 (2).jpg" alt="">
+                    </div>
+
+                    <div
+                        style="background-color: #686868; position: absolute; height: 200px; width: 270px; left: 70px; z-index: 20; top: 10px; border-radius: 30px;">
+
+                    </div>
+
+                    <div
+                        style="background-color: #4D4A53; height: 200px; width: 310px; position: absolute ; z-index: 30; left: 50px; top: 25px; border-radius: 30px;">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
     </section>
 
     <!-- Expertise section end -->
@@ -364,14 +467,21 @@
                     <h1 id="form-title">// wanna work together?</h1>
                 </div>
 
-                <form class="form">
-                    <input class="input" placeholder="YOUR NAME" type="text">
-                    <input class="input" placeholder="YOUR EMAIL" type="email">
-                <input style="margin-top: 40px;" class="input" placeholder="YOUR MESSAGE" type="email">
+                <form onsubmit="handleContact(event)" class="form">
+                    <input class="input" name="name"  placeholder="YOUR NAME" type="text">
+                    <input class="input" name="email"  placeholder="YOUR EMAIL" type="email">
+                    <input style="margin-top: 40px;" name="message"  class="input" placeholder="YOUR MESSAGE" type="text">
+                <button type="submit" id="send-btn">SEND</button>
                 </form>
-            <button id="send-btn">SEND</button>
+
+                <div style="margin-top: 30px;" id="success-container">
+                    <!-- <p>Your name : Toha</p>
+                    <p>Your email : toha@gmail.com</p>
+                    <p>Your Message : Hellow</p> -->
+                </div>
+
             </div>
-    
+
             <div class="right-footer">
                 <div class="contact-title">
                     <h1 id="contact-title">others way to contact</h1>
@@ -389,15 +499,19 @@
                     <a href=""><img style="width: 30px;" src="images/social/twitter.png" alt=""></a>
                 </div>
 
-            </div>  
+            </div>
         </section>
         <div style="padding: 25px 55px;">
             <hr>
         </div>
 
-            <h1 style="text-align: center; padding-bottom: 30px; margin: 25px 0px ;">© 2023, John Smith. All rights Reserved</h1>
+        <h1 style="text-align: center; padding-bottom: 30px; margin: 25px 0px ;">© 2023, John Smith. All rights Reserved
+        </h1>
 
     </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 

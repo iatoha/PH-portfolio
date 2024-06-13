@@ -23,3 +23,7 @@ body {
 .container {
     padding: 0px 60px 80px;
 }
+
+.bg-gradient{
+    background-image: linear-gradient(to bottom right, #5d4af133, #b90bf949)
+}
